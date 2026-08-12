@@ -1,0 +1,5 @@
+depth-anything-3
+torch==2.13.0+cu132
+torchvision==0.18.0+cu132
+opencv-python
+huggingface_hub[hf_xet]
