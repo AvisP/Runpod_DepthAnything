@@ -7,6 +7,11 @@
 5. The `send_test_run.py` script will also create a `test_input.json` which can be used to test the endpoint by just doing `python handler.py` which will use this json file to test
 6. Create a docker image using the `Dockerfile` created which includes all the packages and the model files as well `docker build --platform linux/amd64 --tag docker_username/depth-anything3:latest .`
 7. Locally test if the container works by `docker run -it --gpus all docker_username/depth-anything3:latest`
-8. Push the container into the docker hub by `docker push modz1/depth-anything3:latest`
+8. Push the container into the docker hub by `docker push docker_username/depth-anything3:latest`
 9. Follow instructions on runpod severless and create an endpoint. Copy over the credentials (Key, Url) into `.env.example` and rename it to `.env`
 10. Test the endpoint with `send_test_run.py` script
+
+## Sample Image
+<img width="457" height="214" alt="StreetView" src="https://github.com/user-attachments/assets/90517da5-d0a6-4c5d-a110-ed64dd1c2b9a" />
+
+<img width="800" height="500" alt="depth_map" src="https://github.com/user-attachments/assets/993edb24-23c8-4f5b-8380-1505cfb89d78" />
